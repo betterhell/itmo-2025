@@ -19,18 +19,36 @@
     </header>
 
     <main style="padding: 10px;">
-        <section>
+        <section style="text-align: center;">
             <h2 style="color:rgb(30, 58, 113)">Hello World!</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse repudiandae quibusdam.</p>
         </section>
     
-        <div>
-            <h2 style="line-height: 1em; font-size: 16px;">
+        <div style="text-align: center;">
+            <h2 style="line-height: 1.5em; font-size: 16px;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem tempore voluptas, vel vitae provident vero, 
                 <span style="color: blueviolet; font-size: 1.3rem; text-decoration: underline;">molestias delectus praesentium exercitationem</span> 
                 eaque debitis facere odio recusandae quis nisi doloribus! Aliquid, voluptatum!
             </h2>
         </div>
+
+        <section style="display: flex; justify-content: center; gap:5px">
+            <div style="width: 33%; border: 2px solid orange; color: black; padding: 5px; box-sizing: border-box; cursor: pointer; transition: all 0.3s ease-out;" onmouseover="this.style.backgroundColor = '#333333'; this.style.color = 'white';"
+            onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black';">
+                <h3>Card 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
+            </div>
+            <div style="width: 33%; border: 2px solid rgb(79, 57, 218); padding: 5px; box-sizing: border-box; cursor: pointer; transition: all 0.3s ease-out;" onmouseover="this.style.backgroundColor = '#333333'; this.style.color = 'white';"
+            onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black';">
+                <h3>Card 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
+            </div>
+            <div style="width: 33%; border: 2px solid rgb(64, 199, 161); padding: 5px; box-sizing: border-box;" onmouseover="this.style.backgroundColor = '#333333'; this.style.color = 'white';"
+            onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black';">
+                <h3>Card 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
+            </div>
+        </section>
     </main>
     
     <footer style="display: flex; flex-direction: column; justify-content: center; text-align: center; border-top: 1px solid black;">
