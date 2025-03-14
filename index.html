@@ -7,35 +7,36 @@
 </head>
 <body>
     <header>
-        <h1>This is Header</h1>
+        <h1 style="color: red; text-align: center;">This is Header</h1>
 
         <nav class="navigation">
-            <ul>
-                <li class="item1">item</li>
-                <li class="item2">item</li>
-                <li class="item3">item</li>
-                <li class="item4">item</li>
-                <li class="item5">item</li>
-            </ul>
+            <div style="display: flex; margin: 0 5px; justify-content: space-evenly; align-items: center; gap: 3px">
+                <button>Button</button>
+                <button>Button</button>
+                <button>Button</button>
+                <button>Button</button>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main style="padding: 10px;">
         <section>
-            <h2>Hello World!</h2>
+            <h2 style="color:rgb(30, 58, 113)">Hello World!</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse repudiandae quibusdam.</p>
         </section>
     
         <div>
-            <h2>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem tempore voluptas, vel vitae provident vero, molestias delectus praesentium exercitationem eaque debitis facere odio recusandae quis nisi doloribus! Aliquid, voluptatum!</span>
+            <h2 style="line-height: 1em; font-size: 16px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem tempore voluptas, vel vitae provident vero, <span style="color: blueviolet; font-size: 1.3rem;">molestias delectus praesentium exercitationem</span> eaque debitis facere odio recusandae quis nisi doloribus! Aliquid, voluptatum!
             </h2>
         </div>
     </main>
     
-    <footer>
+    <footer style="display: flex; flex-direction: column; justify-content: center; text-align: center; border-top: 1px solid black;">
         <h6>This is Footer</h6>
-        <button>Button</button>
+        <button style="border:none; background-color: rgb(30, 58, 113); border-radius: 5px; color: white; padding: 5px; cursor: pointer; transition: color 0.2s;"
+        onmouseover="this.style.color = 'red';"
+        onmouseout="this.style.color = 'white';">Button</button>
     </footer>
 </body>
 </html>
