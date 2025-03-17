@@ -13,7 +13,7 @@
 }
 
 /* Main styles */
-.main_block {
+.main-block {
     padding: 10px;
 }
 
@@ -31,14 +31,14 @@
     }
 }
 
-.cards_block {
+.cards-block {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
 }
 
-.cards_block__card {
+.cards-block__card {
     width: 33vw;
     max-width: 200px;
     min-width: 150px;
@@ -56,24 +56,24 @@
     }
 }
 
-.cards_block__card-orange {
+.cards-block__card_orange {
     border: 2px solid orange;
 }
 
-.cards_block__card-yellow {
+.cards-block__card_yellow {
     border: 2px solid yellow;
 }
 
-.cards_block__card-green {
+.cards-block__card_green {
     border: 2px solid green;
 }
 
-.cards_block__card-black {
+.cards-block__card_black {
     border: 2px solid black;
 }
 
 /* Footer styles */
-.footer_block {
+.footer-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
