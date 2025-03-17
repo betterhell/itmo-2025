@@ -47,6 +47,13 @@
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: black;
+
+    &:hover {
+        background-color: #333333;
+        color: white
+    }
 }
 
 .card_orange {
@@ -83,4 +90,9 @@
     border-radius: 5px;
     transition: color 0.2s ease-in-out;
     cursor: pointer;
+    color: white;
+
+    &:hover {
+        color: red;
+    }
 }
