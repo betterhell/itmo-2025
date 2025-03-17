@@ -3,59 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1 style="color: red; text-align: center;">This is Header</h1>
+    <header class="header-block">
+        <h1 class="header__h1">This is Header</h1>
 
-        <nav class="navigation">
-            <div style="display: flex; margin: 0 5px; justify-content: space-evenly; align-items: center; gap: 3px">
-                <button>Button</button>
-                <button>Button</button>
-                <button>Button</button>
+        <nav class="nav header__nav">
+            <div class="nav__items">
+                <button class="button">Button</button>
+                <button class="button">Button</button>
+                <button class="button">Button</button>
             </div>
         </nav>
     </header>
 
-    <main style="padding: 10px;">
-        <section style="text-align: center;">
-            <h2 style="color:rgb(30, 58, 113)">Hello World!</h2>
+    <main class="main-block">
+        <section class="hero" >
+            <h2>Hello World!</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse repudiandae quibusdam.</p>
-        </section>
-    
-        <div style="text-align: center;">
-            <h2 style="line-height: 1.5em; font-size: 16px;">
+            <h2>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem tempore voluptas, vel vitae provident vero, 
-                <span style="color: blueviolet; font-size: 1.3rem; text-decoration: underline;">molestias delectus praesentium exercitationem</span> 
+                <span>molestias delectus praesentium exercitationem</span> 
                 eaque debitis facere odio recusandae quis nisi doloribus! Aliquid, voluptatum!
             </h2>
-        </div>
+        </section>
+    
 
-        <section style="display: flex; justify-content: center; flex-wrap: wrap; gap:5px;">
-            <div style="width: 33vw; max-width: 200px; border: 2px solid orange; color: black; padding: 5px; box-sizing: border-box; cursor: pointer; transition: all 0.3s ease-out;" onmouseover="this.style.backgroundColor = '#333333'; this.style.color = 'white';"
-            onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black';">
+        <section class="cards-block">
+            <div  class="cards-block__card cards-block__card_orange">
                 <h3>Card 1</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
             </div>
-            <div style="width: 33vw; max-width: 200px; border: 2px solid rgb(79, 57, 218); padding: 5px; box-sizing: border-box; cursor: pointer; transition: all 0.3s ease-out;" onmouseover="this.style.backgroundColor = '#333333'; this.style.color = 'white';"
-            onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black';">
+            <div class="cards-block__card cards-block__card_yellow">
                 <h3>Card 2</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
             </div>
-            <div style="width: 33vw; max-width: 200px; border: 2px solid rgb(64, 199, 161); padding: 5px; box-sizing: border-box; cursor: pointer; transition: all 0.3s ease-out;" onmouseover="this.style.backgroundColor = '#333333'; this.style.color = 'white';"
-            onmouseout="this.style.backgroundColor = 'white'; this.style.color = 'black';">
+            <div class="cards-block__card cards-block__card_green">
                 <h3>Card 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
+            </div>
+            <div class="cards-block__card cards-block__card_black">
+                <h3>Card 4</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos expedita perferendis doloribus. Tenetur facilis iure cupiditate a, perferendis nulla dolorum reprehenderit.</p>
             </div>
         </section>
     </main>
     
-    <footer style="display: flex; flex-direction: column; justify-content: center; text-align: center; border-top: 1px solid black;">
+    <footer class="footer-block">
         <h6>This is Footer</h6>
-        <button style="border:none; background-color: rgb(30, 58, 113); border-radius: 5px; color: white; padding: 5px; cursor: pointer; transition: color 0.2s;"
-        onmouseover="this.style.color = 'red';"
-        onmouseout="this.style.color = 'white';">Button</button>
+        <button class="footer-block__button button">Button</button>
     </footer>
 </body>
 </html>
