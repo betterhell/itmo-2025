@@ -56,19 +56,19 @@
     }
 }
 
-.card_orange {
+.cards_block__card-orange {
     border: 2px solid orange;
 }
 
-.card_yellow {
+.cards_block__card-yellow {
     border: 2px solid yellow;
 }
 
-.card_green {
+.cards_block__card-green {
     border: 2px solid green;
 }
 
-.card_black {
+.cards_block__card-black {
     border: 2px solid black;
 }
 
@@ -81,16 +81,12 @@
     border-top: 1px solid black;
 }
 
-.footer_block__button {
-    background-color:rgb(30, 58, 113);
-    color: white;
-}
-
 .button {
     border-radius: 5px;
     transition: color 0.2s ease-in-out;
     cursor: pointer;
     color: white;
+    background-color:rgb(30, 58, 113);
 
     &:hover {
         color: red;
