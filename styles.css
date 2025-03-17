@@ -1,0 +1,85 @@
+/* Header styles */
+.header__h1 {
+    color: red;
+    text-align: center;
+}
+
+.nav__items {
+    display: flex;
+    margin: 0 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Main styles */
+.main_block {
+    padding: 10px;
+}
+
+.hero {
+    text-align: center;
+    & h2 {
+        color: rgb(30, 58, 113);
+        line-height: 1.5em;
+        font-size: 16px;
+        & span {
+            color: blueviolet;
+            font-size: 1.3rem;
+            text-decoration:underline;
+        }
+    }
+}
+
+.cards_block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.cards_block__card {
+    width: 33vw;
+    max-width: 200px;
+    min-width: 150px;
+    color: black;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.card_orange {
+    border: 2px solid orange;
+}
+
+.card_yellow {
+    border: 2px solid yellow;
+}
+
+.card_green {
+    border: 2px solid green;
+}
+
+.card_black {
+    border: 2px solid black;
+}
+
+/* Footer styles */
+.footer_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.footer_block__button {
+    background-color:rgb(30, 58, 113);
+    color: white;
+}
+
+.button {
+    border-radius: 5px;
+    transition: color 0.2s ease-in-out;
+}
