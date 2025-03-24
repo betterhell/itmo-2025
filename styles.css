@@ -57,6 +57,10 @@
             text-decoration:underline;
         }
     }
+
+    & p {
+        font-size: 1.2em;
+    }
 }
 
 .cards-block {
@@ -71,6 +75,14 @@
     transition: all 0.3s ease-out;
     background-color: transparent;
     color: black;
+    
+    & h3 {
+        font-size: 1.4rem;
+    }
+
+    & p {
+        font-size: 1.2rem;
+    }
 
     &:hover {
         background-color: #333333;
