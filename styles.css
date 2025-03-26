@@ -5,7 +5,8 @@
     --secondary-color: #333333;
     --main-padding: 10px;
     --main-margin: 10px;
-
+    --secondary-padding: 5px;
+    --secondary-margin: 5px;
 }
 
 /* CSS Reset styles */
@@ -28,7 +29,7 @@
 
 .header__h1 {
     color: var(--secondary-color);
-    margin: 0 0 10px 0;
+    margin: 0 0 var(--main-margin) 0;
     text-align: center;
     font-size: 3rem;
 }
@@ -61,6 +62,59 @@
 
     & p {
         font-size: 1.2em;
+    }
+}
+
+.registration-block {
+    margin: var(--main-margin) 0;
+    text-align: center;
+}
+
+.registration-block__form {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding:  var(--main-padding);
+    gap: 10px;
+    margin-top: var(--main-margin);
+
+    & h3 {
+        font-size: 1.5rem;
+    }
+
+    & button {
+        width: 100%;
+        border-radius: var(--main-radius);
+        border: none;
+        padding: var(--main-padding);
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background-color: #22db28;
+        transition: all 0.3s ease;
+        color: var(--primary-color)
+    }
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--main-margin);
+
+    & span {
+        margin-bottom: var(--secondary-margin);
+    }
+    
+    & input {
+        border: 2px solid #2095cb;
+        border-radius: var(--main-radius);
+        padding: var(--secondary-padding);
+    }
+
+    & input:focus-visible {
+        border: 2px solid #22db28;
+        outline: none;
+        transition: all 0.3s ease-in-out;
     }
 }
 
