@@ -25,7 +25,8 @@
     top: 0;
     background-color: rgb(99, 230, 171);
     padding-bottom: var(--main-padding);
-    border-radius: 0 0 var(--main-radius) var(--main-radius)
+    border-radius: 0 0 var(--main-radius) var(--main-radius);
+    z-index: 2;
 }
 
 .header__h1 {
