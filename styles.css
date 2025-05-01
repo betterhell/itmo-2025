@@ -5,7 +5,9 @@
     --secondary-color: #333333;
     --main-padding: 10px;
     --main-margin: 10px;
-
+    --secondary-padding: 5px;
+    --secondary-margin: 5px;
+    --main-transition: all 0.3s ease-out;
 }
 
 /* CSS Reset styles */
@@ -28,7 +30,7 @@
 
 .header__h1 {
     color: var(--secondary-color);
-    margin: 0 0 10px 0;
+    margin: 0 0 var(--main-margin) 0;
     text-align: center;
     font-size: 3rem;
 }
@@ -64,6 +66,80 @@
     }
 }
 
+.registration-block {
+    margin: var(--main-margin) 0;
+    text-align: center;
+}
+
+.registration-block__form {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding:  var(--main-padding);
+    gap: 10px;
+    margin-top: var(--main-margin);
+
+    & h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.registration-button__buckground {
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: #22db28;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.registration-button {
+    width: 100%;
+    border-radius: var(--main-radius);
+    border: none;
+    padding: var(--main-padding);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition);
+
+    &:hover {
+        color: var(--primary-color);
+        transform: scale(1.01);
+    }
+}
+
+.registration-button:hover .registration-button__buckground {
+    width: 100%;
+    height: 1000%;
+    transition: var(--main-transition)
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--main-margin);
+
+    & span {
+        margin-bottom: var(--secondary-margin);
+    }
+    
+    & input {
+        border: 2px solid #2095cb;
+        border-radius: var(--main-radius);
+        padding: var(--secondary-padding);
+    }
+
+    & input:focus-visible {
+        border: 2px solid #22db28;
+        outline: none;
+        transition: var(--main-transition)
+    }
+}
+
 .cards-block {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -73,7 +149,7 @@
 .cards-block__card {
     border-radius: var(--main-radius);
     padding: var(--main-padding);    cursor: pointer;
-    transition: all 0.3s ease-out;
+    transition: var(--main-transition);
     background-color: transparent;
     color: black;
     
@@ -116,7 +192,7 @@
     border-radius: 50%;
     cursor: pointer;
     animation: pulse 2s infinite normal ease-in-out;
-    transition: background-color 0.2s ease;
+    transition: var(--main-transition);
 
     &:hover {
         background-color: rgb(50, 197, 182);
@@ -152,7 +228,7 @@
 .button {
     border-radius: var(--main-radius);
     border: none;
-    transition: color 0.2s ease-in-out;
+    transition: var(--main-transition);
     cursor: pointer;
     color: var(--primary-color);
     background-color:rgb(113, 139, 192);
